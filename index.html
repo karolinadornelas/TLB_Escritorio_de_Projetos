@@ -1,40 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Escritório de Projetos</title>
-</head>
-<body>
-    <div id="content_bundle">
-        <div id="form_container">
-            <div id="form_header">
-                <h4 id="fomr_header_content">EP firebase</h4>
-            </div>
-            <div id="form_content_container">
-                <div id="form_inner_container">
-                    <input type="text" id="ful_name" placeholder="Nome Completo">
-                    <input type="email" id="email" placeholder="E-mail Corporativo">
-                    <input type="password" id="password" placeholder="Nova Senha">
-                    <input type="text" id="department" placeholder="Gerência (SIGLA)">
-        
-                    <div id="btn_container">
-                        <button onClick="login()">LOGIN</button>
-                        <button onClick="register()">REGISTRAR</button>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Escritório de Projetos</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h4 id="form_header">
+                        <img src="./assets/LOGO_VERTICAL SLIDA MARGEM.png" alt="logo telebras"> Escritório de Projetos </h4>
+                </div>
+
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="full_name" placeholder="Nome Completo" style="text-transform: capitalize;">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="Nova Senha">
+                        <input type="text" id="department" placeholder="Gerência (SIGLA)" style="text-transform: uppercase;">
+                        <div id="button_container">
+                            <button onclick="login()">Login</button>
+                            <button onclick="register()">Register</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-<script src="/escritorio-de-projetos/script.js"></script>
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="script.js"></script>
 
-</script>
 </html>
