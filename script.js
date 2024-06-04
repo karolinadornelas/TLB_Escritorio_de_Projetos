@@ -36,7 +36,7 @@ function register () {
         full_name : full_name,
         department : department,
         last_login : Date.now()
-}
+} 
     //push
     database_ref.child('users/' + user.uid).set(user_data)
         alert('Usuário criado')
