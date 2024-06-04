@@ -1,17 +1,8 @@
-@font-face {
-    font-family: 'FUTURA AL';
-    src: url(./fontes/futuralc.ttf);
-}
-
-@font-face {
-    font-family: 'FUTURA B';
-    src: url(./fontes/futurab.ttf);
-}
-
 body{
     width: 100%;
     height: 100vh;
     margin: 0;
+    font-family: "Roboto Condensed", sans-serif;;
     background: linear-gradient(270deg, #84deff, #1761b6, #6cadf7, #3673b8);
     background-size: 800% 800%;
     -webkit-animation: bg-animation 48s ease infinite;
@@ -89,10 +80,10 @@ body{
     border-radius: 20px;
     padding: 10px;
     background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 10.5px );
--webkit-backdrop-filter: blur( 10.5px );
-border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
     border-radius: 10px;
 }
 

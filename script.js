@@ -19,11 +19,11 @@ function register () {
     department = document.getElementById('department').value
 
     if (validate_email(email) == false || validate_password(password) == false) {
-        alert('Email or Password is Outta Line!!')
+        alert('Um ou mais campos estão preenchidos incorretamente.')
         return
     }
     if (validate_field(full_name) == false || validate_field(department) == false) {
-        alert('One or More Extra Fields is Outta Line!!')
+        alert('Um ou mais campos estão preenchidos incorretamente.')
         return
     }
 
